@@ -1,0 +1,55 @@
+{
+    "name": "contaoblackforest/contao-gulp-bundle",
+    "description": "Contao gulp bundle",
+    "keywords": [
+        "contao",
+        "bundle",
+        "task",
+        "gulp"
+    ],
+    "type": "contao-bundle",
+    "homepage": "https://github.com/ContaoBlackForest",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Sven Baumann",
+            "email": "baumann.sv@gmail.com",
+            "homepage": "https://github.com/baumannsven",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "mail@metamodel.me",
+        "issues": "https://github.com/ContaoBlackForest/contao-gulp-bundle/issues",
+        "wiki": "https://github.com/ContaoBlackForest/contao-gulp-bundle/wiki",
+        "irc": "irc://irc.freenode.org/contao.mm",
+        "source": "https://github.com/ContaoBlackForest/contao-gulp-bundle"
+    },
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "contao/core-bundle": "^4.4",
+        "symfony/dependency-injection": "^3.3",
+        "symfony/http-kernel": "^3.3"
+    },
+    "require-dev": {
+        "phpcq/all-tasks": "~1.2",
+        "contao/manager-plugin": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ContaoBlackForest\\GulpBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ContaoBlackForest\\GulpBundle\\Test\\": "tests/Test"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "ContaoBlackForest\\GulpBundle\\ContaoManager\\Plugin",
+        "branch-alias": {
+            "dev-master": "1.0.x-dev",
+            "dev-contao4": "1.1.x-dev"
+        }
+    }
+}
